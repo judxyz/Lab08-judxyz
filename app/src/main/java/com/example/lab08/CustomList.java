@@ -21,11 +21,10 @@ public class CustomList {
     }
 
     public void delete(City city) {
-        // test
-//        if (!cities.contains(city)) {
-//            throw new IllegalArgumentException();
-//        }
-//        cities.remove(city);
+        if (!cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
     }
 //    public int countCities() {
 //        return cities.size();
